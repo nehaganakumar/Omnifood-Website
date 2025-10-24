@@ -15,6 +15,17 @@ function checkFlexGap() {
   console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
+
+
+  // Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
 }
 checkFlexGap();
 
