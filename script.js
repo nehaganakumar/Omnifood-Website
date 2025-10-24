@@ -5,11 +5,11 @@ const h1 = document.querySelector(".heading-primary");
 console.log(myName);
 console.log(h1);
 
-// h1.addEventListener("click", function () {
-//   h1.textContent = myName;
-//   h1.style.backgroundColor = "red";
-//   h1.style.padding = "5rem";
-// });
+ h1.addEventListener("click", function () {
+  h1.textContent = myName;
+ h1.style.backgroundColor = "red";
+  h1.style.padding = "5rem";
+ });
 
 ///////////////////////////////////////////////////////////
 // Set current year
@@ -105,7 +105,7 @@ checkFlexGap();
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
-/*
+
 .no-flexbox-gap .main-nav-list li:not(:last-child) {
   margin-right: 4.8rem;
 }
@@ -154,5 +154,5 @@ checkFlexGap();
     margin-bottom: 4.8rem;
   }
 }
-*/
+
 
